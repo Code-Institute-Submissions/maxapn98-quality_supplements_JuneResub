@@ -32,7 +32,55 @@
     <title>Quality Supplements {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="container-fluid fixed-top"></header>
+    <div class="container-fluid fixed-top">
+      <div class="header_section">
+        <div class="container">
+           <div class="navbar navbar-expand-lg custom_nav-container ">
+             <a href="{% url 'home' %}">
+             <h1 class="text-uppercase">Quality Supplements</h1>
+             </a>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav">
+                   <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" 
+                    aria-expanded="true"> <span class="nav-label">My Profile <span class="caret"></span></span></a>
+                     <ul class="dropdown-menu">
+                      {% if request.user.is_authenticated %}
+                          {% if request.user.is_superuser %}
+                          <li><a href="testimonial.html">Product Management</a></li>
+                          {% endif %}
+                       <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" 
+                       aria-expanded="true"> <span class="nav-label">Profile <span class="caret"></span></span></a>
+                       <li><a href="{% url 'account_logout' %}">Logout</a></li>
+                      {% else %}
+                      <li><a href="{% url 'account_login' %}">Login</a></li>
+                      <li><a href="{% url 'account_signup' %}">Register</a></li>
+                      {% endif %}
+                       </ul>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="product.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="#">
+                        <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                        <p class="my-0">
+                            {% if grand_total %}
+                                ${{ grand_total|floatformat:2 }}
+                            {% else %}
+                                $0.00
+                            {% endif %}
+                        </p>
+                 </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
 
     {% if messages %}
         <div class="message-container"></div>
