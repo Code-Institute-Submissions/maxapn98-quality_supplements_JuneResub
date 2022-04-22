@@ -32,10 +32,10 @@
     <title>Quality Supplements {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <div class="container-fluid fixed-top">
-      <div class="header_section">
+    <header class="container-fluid fixed-top">
+      <header class="header_section">
         <div class="container">
-           <div class="navbar navbar-expand-lg custom_nav-container ">
+           <nav class="navbar navbar-expand-lg custom_nav-container ">
              <a href="{% url 'home' %}">
              <h1 class="text-uppercase">Quality Supplements</h1>
              </a>
@@ -75,12 +75,20 @@
                                 $0.00
                             {% endif %}
                         </p>
+                        <form method="GET" action="" class="form-inline">
+                          <div class="input-group">
+                              <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                              <div class="input-group-append">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                              </div>
+                          </div>
+                      </form>
                  </ul>
               </div>
-            </div>
+           </nav>
         </div>
-      </div>
-    </div>
+     </header>
+    </header>
 
     {% if messages %}
         <div class="message-container"></div>
