@@ -63,12 +63,25 @@ a {
       color: black;
   }
 
-  a:hover {
-    color: var(--yellow);
-    background-color: transparent;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s
+a:hover {
+  color: var(--yellow);
+  background-color: transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s
   }
+/*font-awsome*/
+
+.fas {
+    color: #000000;
+  }
+
+.shop-now-button {
+   background: black;
+   color: white;
+   min-width: 260px;
+}
+
+
   /*end header section*/
 
   /* slider section */
