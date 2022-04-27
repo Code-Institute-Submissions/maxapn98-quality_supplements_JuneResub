@@ -2,6 +2,11 @@ from django.db import models
 
 
 class Category(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Categories'
+
+
     product_category = models.CharField(max_length=254)
 
     def __str__(self):
@@ -21,4 +26,4 @@ class Product(models.Model):
     
 
     def __str__(self):
-        return self.brand_name
+        return self.product_name
