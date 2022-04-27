@@ -221,6 +221,84 @@ a:hover {
   text-align: center;
 }
 
+/*PRODUCTS*/
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+.card:hover .option_container {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+ .option_container {
+  position: absolute;
+  top: 0;
+  left: 3;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.options a {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 30px;
+  width: 165px;
+  text-align: center;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+  margin: 5px 0;
+}
+
+.options .option1 {
+  background-color: var(--yellow);
+  border: 1px solid var(--yellow);
+  color: #ffffff;
+}
+
+.options .option1:hover {
+  background-color: var(--yellow);
+  opacity: 0.75;
+  color: black;
+}
+
+.options .option2 {
+  background-color: #000000;
+  border: 1px solid #000000;
+  color: #ffffff;
+}
+
+.options .option2:hover {
+  background-color: transparent;
+  color: #000000;
+}
+
+
 
 @media (max-width: 1300px) {}
 
