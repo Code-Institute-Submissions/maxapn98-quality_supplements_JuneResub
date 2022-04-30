@@ -7,7 +7,7 @@ class Category(models.Model):
         verbose_name_plural = 'Categories'
 
 
-    product_category = models.CharField(max_length=254)
+    product_category = models.CharField(max_length=254) #update
 
     def __str__(self):
         return self.product_category
