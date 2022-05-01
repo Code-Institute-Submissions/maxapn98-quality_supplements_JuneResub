@@ -11,6 +11,7 @@ a {
     --red : #79031d;
 }
 
+
 /*header section*/
   .header_section {
       padding: 15px 0;
@@ -69,6 +70,7 @@ a:hover {
   -webkit-transition: all 0.3s;
   transition: all 0.3s
   }
+
 /*font-awsome*/
 
 .fas {
@@ -275,7 +277,16 @@ a:hover {
   margin: 5px 0;
 }
 
-.options .option1 {
+.option-a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.option-i:hover{
+  background-color: var(--yellow);
+}
+
+.options .option1 .option {
   background-color: var(--yellow);
   border: 1px solid var(--yellow);
   color: #ffffff;
