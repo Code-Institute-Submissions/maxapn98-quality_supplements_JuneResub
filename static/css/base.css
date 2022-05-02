@@ -322,6 +322,11 @@ letter-spacing:0.5;
   color:#ffffff;
 }
 
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 
 
 @media (max-width: 1300px) {}
