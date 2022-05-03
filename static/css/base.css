@@ -264,7 +264,9 @@ a:hover {
           transform: translateY(50%);
 }
 
-
+.fas {
+  color: var(--red)
+}
 
 .btns {
   display: inline-block;
