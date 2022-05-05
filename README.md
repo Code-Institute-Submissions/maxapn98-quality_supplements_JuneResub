@@ -1,45 +1,86 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Health Gains Website
+This is an E-commerce website for an online supplement shop. Users can search for information on products, as well they can read reviews or leave a review about products, purchase them online, and pay online.
+### Strategy Plane
+ What is the idea of the project?
+ - The idea is to build an online e-commerce web application for a supplement store, with a payment system, and an authentication system including email confirmations and user profiles.
+  Who is the shopper?
+- Shoppers of this website are people who are interested in supplements purchase.
 
-Welcome maxapn98,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+The site’s owner goals:
+- The owner wants to build an online shop for supplements.
+- The site owner wants that every user or shopper get register on this website.
+- Both registered and non-registered users should be able to navigate websites and view products, their reviews, price, description, and rating.
+- Registered users should have the option to leave and edit their reviews on products.
+- 
+The user goals :
+- User wants to be able to look at the specific category, and filter by price and rating.
+- Users will have an option to look at product reviews.
+- Registered users will be able to add their review on a product, edit it, and delete it.
+- User wants to get registered easily.
+- User should be able to look at their profile once is registered, and log out.
+- Once registered users will receive an email confirmation for verification.
+- User will have a personalized user profile. 
+- On the profile page user will see their default delivery information, and Order History.
+- Users can search for a specific product by name or description.
+- User can select the quantity wanted and add the product to the bag.
+- On the bag page user will see all products selected in a bag, product ID, quantity and price of a product, and a total price.
+- User can modify the number of products wanted in the bag.
+- Once pressed the checkout button user will need to provide delivery information and card number.
+- Once all information provided by the user is verified user will get order information, and order verification.
+### Scope Plane
+The features that the website should include:
+- [] Landing page
+- [] Products page
+- [] Login form
+- [] Profile page
+- [] Registration form.
+- [] Shopping bag page 
+- [] Contact page
+- [] Ability to Search specific products by name.
+- [] Ability to sort products by category.
+- [] Ability to sort products by rating, and price.
+- [] Ability to enter in the specific product page and look at description, image, price, category
+- [] Ability to add a quantity of the product to a shopping bag
+- [] Ability to see reviews.
+- [] Ability to add a review, update the review, and delete.
+- [] Ability to add the wanted product to the shopping bag.
+- [] Ability to modify shopping bag quantity of products.
+- [] Ability to checkout
+- [] Ability for online payment.
+- [] Ability to save delivery information.
+### Structure Plane
+The information architutre:
+- Flow of information should be clear and consistent throughout the design.
+The interaction design:
+- Once opened website user will be informed about the website's information so that he/she can easily start to shop on this website. 
+- The landing page should also contain visuals in form of images that convey the meaning that this is a website that has something to do with the supplements.
+- The landing page should contain a call-to-action to invoke a lead.
+- The landing page will be provided with different buttons for categorizing the products.
+- On the landing page user can also easily use the search input to find a specific product by its name or description.
+- In the right top corner of the website user will be able to see a shopping bag with the current amount, Profile button witch will lead a user to the profile page once a user is registered, if not he will be able to easily get registred, and a contact button for the contact page.
+- Products page will contain a preview of all the products/supplements that can be found in the database.
+- Supplements should be displayed on the products page using bootstrap cards where each card will contain an image, name, price, rating, and category.
+- Once clicked on the card user will be provided with a product image, name, price, rating, category, description, and product review, he will be able to increment decrement the quantity wanted to be added to the shopping bag and a button which will add the products to shopping bag.
+- Registered users will be able to create reviews, update their existing reviews or delete them.
+- Review will contain one input field and submit button.
+- The profile page should contain delivery information that the user has provided when he signed up, update them when needed, and order history.
+- Contact page will contain contact information and an email form.
+- Contact information should contain the company phone and email address.
+- Shopping bag page will contain product info, product name, ID, the number of products added, the price for single and subtotal products, bag total, delivery price, and a grand total.
+- Once clicked on the checkout button user will need to provide delivery information and cart number.
+- The checkout page will contain delivery information and an order summary with the total price.
+### Skeleton plane
+- Homepage
+- products page
+- Profile page
+- Registration page
+- Contact page
+- Shopping bag page
+- Checkout page
+- Checkout success page
+#### Navigation
+- User will be able to navigate the website using the websites' navigation.
+- The profile page will only be made available to the user if he is logged in.
+- The navbar will contain search input, Profile page, Contact page, Shopping bag with bag total underneath the icon.
+- Navbar will contain the website logo.
+- Nav menu on the phone will be activated by clicking on a burger icon.
