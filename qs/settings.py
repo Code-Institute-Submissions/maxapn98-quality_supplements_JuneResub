@@ -67,6 +67,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+
 ROOT_URLCONF = 'qs.urls'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
