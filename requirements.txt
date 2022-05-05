@@ -19,6 +19,7 @@ decorator==5.1.1
 defusedxml==0.7.1
 dill==0.3.4
 distlib==0.3.4
+dj-database-url==0.5.0
 Django==3.2
 django-allauth==0.41.0
 django-countries==7.2.1
@@ -32,6 +33,7 @@ flake8-django==1.1.1
 flake8-flask==0.7.3
 gitdb==4.0.9
 GitPython==3.1.27
+gunicorn==20.1.0
 idna==3.3
 importlib-metadata==4.11.3
 importlib-resources==5.6.0
@@ -74,6 +76,7 @@ platformdirs==2.5.1
 prometheus-client==0.13.1
 prompt-toolkit==3.0.28
 psutil==5.9.0
+psycopg2-binary==2.9.3
 ptyprocess==0.7.0
 pure-eval==0.2.2
 pycodestyle==2.8.0
