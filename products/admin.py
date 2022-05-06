@@ -6,6 +6,7 @@ from .models import Product, Category
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'brand_name',
+        'sku',
         'product_name',
         'product_category',
         'price',
