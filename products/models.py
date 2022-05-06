@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 class Category(models.Model):
@@ -28,3 +29,9 @@ class Product(models.Model):
 
     def __str__(self):
         return self.product_name
+
+
+class Review(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    title = models.CharField(max_length=100, null=True, blank=True)
+    comment = models.CharField(max_length=500, null=True, blank=True)
