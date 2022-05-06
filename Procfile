@@ -1,1 +1,1 @@
-web: gunicorn quality_supplements.wsgi:application
+web: gunicorn qs.wsgi:application
