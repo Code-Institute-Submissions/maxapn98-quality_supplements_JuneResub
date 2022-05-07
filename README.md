@@ -29,25 +29,25 @@ The user goals :
 - Once all information provided by the user is verified user will get order information, and order verification.
 ### Scope Plane
 The features that the website should include:
-- [] Landing page
-- [] Products page
-- [] Login form
-- [] Profile page
-- [] Registration form.
-- [] Shopping bag page 
-- [] Contact page
-- [] Ability to Search specific products by name.
-- [] Ability to sort products by category.
-- [] Ability to sort products by rating, and price.
-- [] Ability to enter in the specific product page and look at description, image, price, category
-- [] Ability to add a quantity of the product to a shopping bag
-- [] Ability to see reviews.
-- [] Ability to add a review, update the review, and delete.
-- [] Ability to add the wanted product to the shopping bag.
-- [] Ability to modify shopping bag quantity of products.
-- [] Ability to checkout
-- [] Ability for online payment.
-- [] Ability to save delivery information.
+- [x] Landing page
+- [x] Products page
+- [x] Login form
+- [x] Profile page
+- [x] Registration form.
+- [x] Shopping bag page 
+- [x] Contact page
+- [x] Ability to Search specific products by name.
+- [x] Ability to sort products by category.
+- [x] Ability to sort products by rating, and price.
+- [x] Ability to enter in the specific product page and look at description, image, price, category
+- [x] Ability to add a quantity of the product to a shopping bag
+- [x] Ability to see reviews.
+- [x] Ability to add a review.
+- [x] Ability to add the wanted product to the shopping bag.
+- [x] Ability to modify shopping bag quantity of products.
+- [x] Ability to checkout
+- [x] Ability for online payment.
+- []x Ability to save delivery information.
 ### Structure Plane
 The information architutre:
 - Flow of information should be clear and consistent throughout the design.
@@ -84,3 +84,16 @@ The interaction design:
 - The navbar will contain search input, Profile page, Contact page, Shopping bag with bag total underneath the icon.
 - Navbar will contain the website logo.
 - Nav menu on the phone will be activated by clicking on a burger icon.
+
+ ### Credits 
+ - Code institute - Main structure and model was taken from the Boutique Ado
+ - startbootstrap.com - For website template
+ - Bootstrap
+
+### Undone
+- Connect with social media
+- Add edit/delete on reviews
+- Testing for readme
+- Wireframes 
+- Code validation
+
