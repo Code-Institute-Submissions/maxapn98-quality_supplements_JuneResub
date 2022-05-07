@@ -87,6 +87,23 @@
                     </div>
                 </form>
             </div>
+            <div class="col-6">
+                <div class="h3 text-center">Comments</div>
+                {% if not product.comments.all %}
+                No comments <a href="{% url 'add_review' product.id %}">Add one</a>
+                <hr>
+                {% else %}
+                <a href="{% url 'add_review' product.id %}" class="btns">Add Comment</a>
+                <hr>
+                    {% for comment in product.comments.all %}
+                        <strong>{{ comment.name}} </strong>
+                        <strong>{{ comment.date_posted}}</strong>
+                        <br>
+                        {{ comment.comment}}
+                        <br>
+                    {% endfor %}
+                {% endif%}
+            </div>
         </div>
     </div>
 </section>

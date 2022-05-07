@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.utils import timezone
 
 
 class Category(models.Model):
@@ -32,6 +33,10 @@ class Product(models.Model):
 
 
 class Review(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    title = models.CharField(max_length=100, null=True, blank=True)
-    comment = models.CharField(max_length=500, null=True, blank=True)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name ='comments')
+    name =  models.CharField(max_length=100)
+    comment = models.TextField(max_length=500, null=True, blank=True)
+    date_posted = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return self.name
