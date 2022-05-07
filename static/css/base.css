@@ -38,7 +38,7 @@ a {
   border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link,
@@ -196,9 +196,15 @@ a:hover {
   background-color: #002c3e;
   padding: 45px 50px;
   border-radius: 5px;
-  color: #ffffff;
+  color: white;
+}
+.why_section {
+  background-color: #f9f7f3;
 }
 
+.dropdown {
+  background-color: #f9f7f3;
+}
 .heading_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,7 +217,9 @@ a:hover {
   -ms-flex-align: start;
   align-items: flex-start;
 }
-
+.font-weight-bold {
+  font-weight: 1000!important;
+}
 .heading_container h2 {
   position: relative;
   margin-bottom: 0;
