@@ -1,25 +1,29 @@
-# Quality Supplements 
+# Quality Supplements
+
 This is an E-commerce website for an online supplement shop. Users can search for information on products, as well they can read reviews or leave a review about products, purchase them online, and pay online.
+
 ### Strategy Plane
- What is the idea of the project?
- - The idea is to build an online e-commerce web application for a supplement store, with a payment system, and an authentication system including email confirmations and user profiles.
+
+What is the idea of the project?
+
+- The idea is to build an online e-commerce web application for a supplement store, with a payment system, and an authentication system including email confirmations and user profiles.
   Who is the shopper?
 - Shoppers of this website are people who are interested in supplements purchase.
 
 The site’s owner goals:
+
 - The owner wants to build an online shop for supplements.
 - The site owner wants that every user or shopper get register on this website.
 - Both registered and non-registered users should be able to navigate websites and view products, their reviews, price, description, and rating.
 - Registered users should have the option to leave and edit their reviews on products.
-- 
-The user goals :
+- The user goals :
 - User wants to be able to look at the specific category, and filter by price and rating.
 - Users will have an option to look at product reviews.
 - Registered users will be able to add their review on a product, edit it, and delete it.
 - User wants to get registered easily.
 - User should be able to look at their profile once is registered, and log out.
 - Once registered users will receive an email confirmation for verification.
-- User will have a personalized user profile. 
+- User will have a personalized user profile.
 - On the profile page user will see their default delivery information, and Order History.
 - Users can search for a specific product by name or description.
 - User can select the quantity wanted and add the product to the bag.
@@ -27,14 +31,17 @@ The user goals :
 - User can modify the number of products wanted in the bag.
 - Once pressed the checkout button user will need to provide delivery information and card number.
 - Once all information provided by the user is verified user will get order information, and order verification.
+
 ### Scope Plane
+
 The features that the website should include:
+
 - [x] Landing page
 - [x] Products page
 - [x] Login form
 - [x] Profile page
 - [x] Registration form.
-- [x] Shopping bag page 
+- [x] Shopping bag page
 - [x] Contact page
 - [x] Ability to Search specific products by name.
 - [x] Ability to sort products by category.
@@ -48,11 +55,14 @@ The features that the website should include:
 - [x] Ability to checkout
 - [x] Ability for online payment.
 - []x Ability to save delivery information.
+
 ### Structure Plane
+
 The information architutre:
+
 - Flow of information should be clear and consistent throughout the design.
-The interaction design:
-- Once opened website user will be informed about the website's information so that he/she can easily start to shop on this website. 
+  The interaction design:
+- Once opened website user will be informed about the website's information so that he/she can easily start to shop on this website.
 - The landing page should also contain visuals in form of images that convey the meaning that this is a website that has something to do with the supplements.
 - The landing page should contain a call-to-action to invoke a lead.
 - The landing page will be provided with different buttons for categorizing the products.
@@ -69,7 +79,9 @@ The interaction design:
 - Shopping bag page will contain product info, product name, ID, the number of products added, the price for single and subtotal products, bag total, delivery price, and a grand total.
 - Once clicked on the checkout button user will need to provide delivery information and cart number.
 - The checkout page will contain delivery information and an order summary with the total price.
+
 ### Skeleton plane
+
 - Homepage
 - products page
 - Profile page
@@ -78,33 +90,40 @@ The interaction design:
 - Shopping bag page
 - Checkout page
 - Checkout success page
+
 #### Navigation
+
 - User will be able to navigate the website using the websites' navigation.
 - The profile page will only be made available to the user if he is logged in.
 - The navbar will contain search input, Profile page, Contact page, Shopping bag with bag total underneath the icon.
 - Navbar will contain the website logo.
 - Nav menu on the phone will be activated by clicking on a burger icon.
 
- ### Credits 
- - Code institute - Main structure and model was taken from the Boutique Ado
- - startbootstrap.com - For website template
- - Bootstrap
+### Credits
+
+- Code institute - Main structure and model was taken from the Boutique Ado
+- startbootstrap.com - For website template
+- Bootstrap
 
 ### Undone
+
 - Connect with social media
 - Add edit/delete on reviews
 - Testing for readme
-- Wireframes 
+- Wireframes
 - Code validation
 
 # Technologies & Languages
+
 Languages used in this project are:
+
 - Python
 - JavaScript
 - HTML (Markup Language)
 - CSS
 
 Technologies that were used in this project are:
+
 - Django
   - Python based framework that follows MVC architectural pattern.
 - JQuery
