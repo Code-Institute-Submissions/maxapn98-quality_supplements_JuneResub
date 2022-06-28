@@ -7,7 +7,9 @@ This is an E-commerce website for an online supplement shop. Users can search fo
 **What is the idea of the project?**
 
 - The idea is to build an online e-commerce web application for a supplement store, with a payment system, and an authentication system including email confirmations and user profiles.
-  Who is the shopper?
+
+**Who is the shopper?**
+
 - Shoppers of this website are people who are interested in supplements purchase.
 
 ### Strategy Plane
