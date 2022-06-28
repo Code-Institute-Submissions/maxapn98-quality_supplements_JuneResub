@@ -2,15 +2,17 @@
 
 This is an E-commerce website for an online supplement shop. Users can search for information on products, as well they can read reviews or leave a review about products, purchase them online, and pay online.
 
-### Strategy Plane
+## UX
 
-What is the idea of the project?
+**What is the idea of the project?**
 
 - The idea is to build an online e-commerce web application for a supplement store, with a payment system, and an authentication system including email confirmations and user profiles.
   Who is the shopper?
 - Shoppers of this website are people who are interested in supplements purchase.
 
-The site’s owner goals:
+### Strategy Plane
+
+**The site’s owner goals:**
 
 - The owner wants to build an online shop for supplements.
 - The site owner wants that every user or shopper get register on this website.
@@ -34,7 +36,7 @@ The site’s owner goals:
 
 ### Scope Plane
 
-The features that the website should include:
+**The features that the website should include:**
 
 - [x] Landing page
 - [x] Products page
@@ -54,11 +56,11 @@ The features that the website should include:
 - [x] Ability to modify shopping bag quantity of products.
 - [x] Ability to checkout
 - [x] Ability for online payment.
-- []x Ability to save delivery information.
+- [x] Ability to save delivery information.
 
 ### Structure Plane
 
-The information architutre:
+**The information architutre:**
 
 - Flow of information should be clear and consistent throughout the design.
   The interaction design:
@@ -91,7 +93,7 @@ The information architutre:
 - Checkout page
 - Checkout success page
 
-#### Navigation
+### Navigation
 
 - User will be able to navigate the website using the websites' navigation.
 - The profile page will only be made available to the user if he is logged in.
@@ -99,13 +101,7 @@ The information architutre:
 - Navbar will contain the website logo.
 - Nav menu on the phone will be activated by clicking on a burger icon.
 
-### Credits
-
-- Code institute - Main structure and model was taken from the Boutique Ado
-- startbootstrap.com - For website template
-- Bootstrap
-
-### Undone
+## Left To Implement
 
 - Connect with social media
 - Add edit/delete on reviews
@@ -113,16 +109,16 @@ The information architutre:
 - Wireframes
 - Code validation
 
-# Technologies & Languages
+## Technologies & Languages
 
-Languages used in this project are:
+**Languages used in this project are:**
 
 - Python
 - JavaScript
 - HTML (Markup Language)
 - CSS
 
-Technologies that were used in this project are:
+**Technologies that were used in this project are:**
 
 - Django
   - Python based framework that follows MVC architectural pattern.
@@ -137,4 +133,4 @@ Technologies that were used in this project are:
 - SQL
   - Domain-specific language designed for managing data held in relational database management system.
 - Amazon S3 Bucket
-  - Cloud object storage
+  - Cloud object storage.
