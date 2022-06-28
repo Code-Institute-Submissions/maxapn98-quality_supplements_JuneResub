@@ -118,7 +118,7 @@ This is an E-commerce website for an online supplement shop. Users can search fo
 - HTML (Markup Language)
 - CSS
 
-**Technologies that were used in this project are:**
+**Technologies used in this project are:**
 
 - Django
   - Python based framework that follows MVC architectural pattern.
