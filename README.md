@@ -101,6 +101,10 @@ This is an E-commerce website for an online supplement shop. Users can search fo
 - Navbar will contain the website logo.
 - Nav menu on the phone will be activated by clicking on a burger icon.
 
+## SQL Database Structure
+
+![checkout app](/docs/images/database-diagram-01.png)
+
 ## Left To Implement
 
 - Connect with social media
