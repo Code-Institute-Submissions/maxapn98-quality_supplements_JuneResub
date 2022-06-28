@@ -97,3 +97,25 @@ The interaction design:
 - Wireframes 
 - Code validation
 
+# Technologies & Languages
+Languages used in this project are:
+- Python
+- JavaScript
+- HTML (Markup Language)
+- CSS
+
+Technologies that were used in this project are:
+- Django
+  - Python based framework that follows MVC architectural pattern.
+- JQuery
+  - JavaScript based library used to provide abstract layer to JS for ease of use and faster development.
+- BootStrap
+  - CSS library with pre-defined classes allowing for faster development of responsive and styled webpages.
+- Stripe
+  - API service that offers payment processing for e-commerce websites.
+- Font Awesome
+  - Font and Icon toolkit.
+- SQL
+  - Domain-specific language designed for managing data held in relational database management system.
+- Amazon S3 Bucket
+  - Cloud object storage
