@@ -136,3 +136,11 @@ This is an E-commerce website for an online supplement shop. Users can search fo
   - Domain-specific language designed for managing data held in relational database management system.
 - Amazon S3 Bucket
   - Cloud object storage.
+
+## Credits
+
+### Content
+
+### Media
+
+- Photos used in this site development were obtained from [Unsplash.com](https://unsplash.com/)
