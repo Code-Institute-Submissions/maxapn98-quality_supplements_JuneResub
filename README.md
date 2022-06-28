@@ -16,27 +16,23 @@ This is an E-commerce website for an online supplement shop. Users can search fo
 
 **The site’s owner goals:**
 
-- The owner wants to build an online shop for supplements.
-- The site owner wants that every user or shopper get register on this website.
-- Both registered and non-registered users should be able to navigate websites and view products, their reviews, price, description, and rating.
-- Registered users should have the option to leave and edit their reviews on products.
+- Owner wants to build an online shop for supplements.
+- Owner wants users to be able to create user accounts in the web store.
+- Owner wants for both registered and non-registered users to be able to navigate website pages, view products, and view reviews.
+- Owner thinks that only registered users should have the option to leave reviews.
 
 **The site’s user goals:**
 
-- User wants to be able to look at the specific category, and filter by price and rating.
-- Users will have an option to look at product reviews.
-- Registered users will be able to add their review on a product, edit it, and delete it.
-- User wants to get registered easily.
-- User should be able to look at their profile once is registered, and log out.
-- Once registered users will receive an email confirmation for verification.
-- User will have a personalized user profile.
-- On the profile page user will see their default delivery information, and Order History.
-- Users can search for a specific product by name or description.
-- User can select the quantity wanted and add the product to the bag.
-- On the bag page user will see all products selected in a bag, product ID, quantity and price of a product, and a total price.
-- User can modify the number of products wanted in the bag.
-- Once pressed the checkout button user will need to provide delivery information and card number.
-- Once all information provided by the user is verified user will get order information, and order verification.
+- User should be able to filter products by specific category, price and rating.
+- User should be able to view product reviews.
+- User should be able to leave a review on products.
+- User should be able to register and create an account at our web store.
+- User should be able to look view their account, purchased order and account information.
+- User should be able to search for a specific product by name or description.
+- User should be able to put desired products in the bag and also be able to decide on the quantity he or she wants to purchase.
+- User should be able to access shopping bag quickly.
+- User should be able to use the bag to view products to be purchased and have the ability to edit the bag contents on the go.
+- User should be able to modify the number of products wanted in the bag.
 
 ### Scope Plane
 
