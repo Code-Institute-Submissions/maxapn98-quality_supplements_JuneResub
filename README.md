@@ -18,7 +18,9 @@ This is an E-commerce website for an online supplement shop. Users can search fo
 - The site owner wants that every user or shopper get register on this website.
 - Both registered and non-registered users should be able to navigate websites and view products, their reviews, price, description, and rating.
 - Registered users should have the option to leave and edit their reviews on products.
-- The user goals :
+
+**The site’s user goals:**
+
 - User wants to be able to look at the specific category, and filter by price and rating.
 - Users will have an option to look at product reviews.
 - Registered users will be able to add their review on a product, edit it, and delete it.
