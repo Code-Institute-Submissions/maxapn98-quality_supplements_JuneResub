@@ -109,7 +109,7 @@ This is an E-commerce website for an online supplement shop. Users can search fo
 
 Before following any of these steps make sure that you have the latest dependencies installed in your application environment. All of the application dependencies are listed within the requrements.txt file found in project's root directory.
 
-To install dependencies while in project'= root dir. run the following command:
+To install dependencies while in project's root dir. run the following command:
 `pip3 install -r requirements.txt`
 
 **Heroku Deployment:**
@@ -140,6 +140,22 @@ To install dependencies while in project'= root dir. run the following command:
 11. Once you have your environment variables setup click on "Enable Automatic Deployment".
 12. Select your branch.
 13. Heroku will now build the app. Once it is done click the button to view the deployed app.
+
+**Local Deployment:**
+
+1. Go to project [repository](https://github.com/maxapn98/quality_supplements)
+2. Fork the project by clicking on the _Fork_ button found in the top right corner of the viewport.
+3. Go to your forked repo and clone it to your local machine using git command.  
+   `git clone <SSH>`
+4. Go into your cloned project on your local machine using bash command.  
+   `cd ~/quality_supplements`
+5. Once inside init. python environment using the following terminal commands.
+   - `python3 -m venv <virtual_env_name>` Creates virtual environment under the name you provide within the current active directory.
+   - `source <virtual_env_name>/bin/activate` Activates the virtual environment that you have created.
+6. Now you will need to setup env.py file within the root dir of your forked project. This will contain all of your environment variables that are used by this app. Refer to the table above in order to understand what variables you need to set.
+7. Run `pip3 install -r requirements.txt` to install all of the dependencies within your active virtual environment.
+8. Once you have set your environment variables migrate and load the json data from fixtures.
+9. Run server on your local machine using `python3 manage.py runserver`
 
 ## Left To Implement
 
