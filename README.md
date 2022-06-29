@@ -190,6 +190,8 @@ To install dependencies while in project's root dir. run the following command:
   - Domain-specific language designed for managing data held in relational database management system.
 - Amazon S3 Bucket
   - Cloud object storage.
+- dbdiagram.io
+  - Used to create diagrams of database models during initial planing.
 
 ## Credits
 
