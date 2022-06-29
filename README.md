@@ -105,6 +105,42 @@ This is an E-commerce website for an online supplement shop. Users can search fo
 
 ![checkout app](/docs/images/database-diagram-01.png)
 
+## Deployment
+
+Before following any of these steps make sure that you have the latest dependencies installed in your application environment. All of the application dependencies are listed within the requrements.txt file found in project's root directory.
+
+To install dependencies while in project'= root dir. run the following command:
+`pip3 install -r requirements.txt`
+
+**Heroku Deployment:**
+
+1. Go to project [repository](https://github.com/maxapn98/quality_supplements)
+2. Fork the project by clicking on the _Fork_ button found in the top right corner of the viewport.
+3. Go to [Heroku](https://www.heroku.com/) and log in. If you don't have an account, create one and then login.
+4. In your dashboard click on "Create New App".
+5. Give your application name and select region closest to your location.
+6. Setup automatic deployment by clicking on "Github" icon inside of the "Deployment Method" section.
+7. Click on "Connect GitHub" and connect your github acc. to Heroku.
+8. Find the repo you have created when you followed the first two steps.
+9. Once you find your repo, click the "connect" button.
+10. Now you want to setup all of the environment variables that are required by the app in order for it to run. To do that find and click on "Reveal Config Var".
+
+| Variable Name         | Variable Description                                                                                                                                                                                                                                                                                                                           |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DEVELOPMENT           | Optional variable. If present in the os environ. then application will run in development mode. It can be set to anything as the code checks only for its existence.                                                                                                                                                                           |
+| SECRET_KEY            | Mandatory variable. Must contain cryptographic key that is used for signing. It is used to generate tokens and hashes.                                                                                                                                                                                                                         |
+| DATABASE_URL          | Optional variable. It should contain the database url. If not provided application code defaults to sqlite3. _Heroku creates this variable when you provision PostgreSQL service. Do not set it manually as on heroku it is a dynamic variable set and changed by Heroku service._                                                             |
+| USE_AWS               | Optional variable. If present in the environ. variables the system will use code block for using AWS S3 bucket. Hence additional environ. variables will be required. _Note: Django needs additional service to serve static files. If you don't set USE_AWS see to implement some other service such as whitenoise to serve the static files_ |
+| AWS_ACCESS_KEY_ID     | Identity token for AWS S3 bucket service.                                                                                                                                                                                                                                                                                                      |
+| AWS_SECRET_ACCESS_KEY | Authorization key used to access S3 store.                                                                                                                                                                                                                                                                                                     |
+| STRIPE_PUBLIC_KEY     | Required for Stripe API. Used in your client-side to tokenize payment information.                                                                                                                                                                                                                                                             |
+| STRIPE_SECRET_KEY     | Required for Stripe API. Used on the backend to authenticate requests.                                                                                                                                                                                                                                                                         |
+| STRIPE_WH_SECRET      | Required for Stripe API. Used by Stripe for webhooks WebHooks                                                                                                                                                                                                                                                                                  |
+
+11. Once you have your environment variables setup click on "Enable Automatic Deployment".
+12. Select your branch.
+13. Heroku will now build the app. Once it is done click the button to view the deployed app.
+
 ## Left To Implement
 
 - Connect with social media
