@@ -12,12 +12,9 @@ class ContactForm(forms.Form):
     subject = forms.CharField(required=True)
     content = forms.CharField(widget=forms.Textarea, required=True)
 
-    
     def __init__(self, *args, **kwargs):
         super(ContactForm, self).__init__(*args, **kwargs)
         self.helper = FormHelper()
 
         self.helper.form_method = 'post'
         self.helper.form_action = '/contact'
-
-        self.helper.add_input(Submit('submit', 'Submit'))
