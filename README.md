@@ -176,21 +176,21 @@ To install dependencies while in project's root dir. run the following command:
 
 **Technologies used in this project are:**
 
-- Django
+- [Django](https://www.djangoproject.com/)
   - Python based framework that follows MVC architectural pattern.
-- JQuery
+- [JQuery](https://jquery.com)
   - JavaScript based library used to provide abstract layer to JS for ease of use and faster development.
-- BootStrap
+- [BootStrap](https://getbootstrap.com/)
   - CSS library with pre-defined classes allowing for faster development of responsive and styled webpages.
-- Stripe
+- [Stripe](https://stripe.com/)
   - API service that offers payment processing for e-commerce websites.
-- Font Awesome
+- [Fontawesome](https://fontawesome.com/)
   - Font and Icon toolkit.
-- SQL
+- [PostgreSQL](https://www.postgresql.org/)
   - Domain-specific language designed for managing data held in relational database management system.
-- Amazon S3 Bucket
+- [Amazon S3 Bucket](https://aws.amazon.com/)
   - Cloud object storage.
-- dbdiagram.io
+- [dbdiagram.io](https://dbdiagram.io/)
   - Used to create diagrams of database models during initial planing.
 
 ## Credits
