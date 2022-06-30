@@ -8,7 +8,8 @@ from .forms import ContactForm
 
 def contact(request):
 
-    form = ContactForm(request.POST)
+    form = ContactForm()
+
     if request.method == 'POST':
         if form.is_valid():
             first_name = form.cleaned_data['first_name']
@@ -17,7 +18,8 @@ def contact(request):
             subject = form.cleaned_data['subject']
             content = form.cleaned_data['content']
             try:
-                send_mail(subject, content, from_email, ['nikipiki@exemple.com'])
+                send_mail(subject, content, from_email,
+                          ['nikipiki@exemple.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found!')
             messages.success(request, 'Message sent!')
@@ -28,5 +30,3 @@ def contact(request):
     }
 
     return render(request, 'contact/contact.html', context)
-
-    
