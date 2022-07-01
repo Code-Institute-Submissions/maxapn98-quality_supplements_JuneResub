@@ -103,7 +103,13 @@ This is an E-commerce website for an online supplement shop. Users can search fo
 
 ## SQL Database Structure
 
-![checkout app](/docs/images/database-diagram-01.png)
+This diagram contains and shows the relation of following databases: Order, OrderLineItem, Product, Category, UserProfile.
+
+![checkout app models and their relations](/docs/images/database-diagram-01.png)
+
+This diagram shows the field structure of Message model in the contact app.
+
+![contact app model](/docs/images/message-diagram.png)
 
 ## Deployment
 
