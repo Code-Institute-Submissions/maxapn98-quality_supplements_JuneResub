@@ -111,6 +111,14 @@ This diagram shows the field structure of Message model in the contact app.
 
 ![contact app model](/docs/images/message-diagram.png)
 
+## Testing
+
+**Navigation:**
+
+1. Fool proofing routes:
+
+   - I have implemented view decorators `@login_required` and `@staff_member_required ` in order to fool proof routes that should be accessed only by authenticated or authorized users.
+
 ## Deployment
 
 Before following any of these steps make sure that you have the latest dependencies installed in your application environment. All of the application dependencies are listed within the requrements.txt file found in project's root directory.
