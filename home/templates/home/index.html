@@ -8,12 +8,12 @@
 
 {% block content%}
    <!--Hero-->
-   <div class="container-fluid hero">
-      <div class="row">
-         <div class="col-5 hero__jumbotron">
-            <h1>Get Your Supplements Today</h1>
-            <p>Achive your goals faster with our supplements.</p>
-            <a href="{% url 'products' %}" class="btn btn-primary">Shop Now</a>
+   <div class="container-fluid hero p-0">
+      <div class="row hero__row m-0">
+         <div class="hero__jumbotron hero__jumbotron--background">
+            <h1 class="ml-lg-3 font-weight-bold mt-3 hero__heading">Get Your Supplements Today</h1>
+            <p class="ml-lg-3 hero__subheading">Achive your goals faster with <br /> our supplements.</p>
+            <a href="{% url 'products' %}" class="btn btn-primary btn-lg ml-lg-3 mb-3">Shop Now</a>
          </div>
       </div>
    </div>
