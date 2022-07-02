@@ -240,6 +240,8 @@ To install dependencies while in project's root dir. run the following command:
   - Cloud object storage.
 - [dbdiagram.io](https://dbdiagram.io/)
   - Used to create diagrams of database models during initial planing.
+- [coolors.co](https://coolors.co/)
+  - Used to create website's color palette.
 
 ## Credits
 
