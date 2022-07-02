@@ -5,6 +5,21 @@
    {{block.super}}
 {% endblock %}
 
+
+{% block content%}
+   <!--Hero-->
+   <div class="container-fluid hero">
+      <div class="row">
+         <div class="col-5 hero__jumbotron">
+            <h1>Get Your Supplements Today</h1>
+            <p>Achive your goals faster with our supplements.</p>
+            <a href="{% url 'products' %}" class="btn btn-primary">Shop Now</a>
+         </div>
+      </div>
+   </div>
+   
+{% endblock %}
+
 {% comment %} {% block content %}
 <!-- slider section -->
 <section class="slider_section">
