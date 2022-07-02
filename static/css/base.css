@@ -8,86 +8,146 @@ a {
 
 :root {
   --white: #f5f7f7;
-  --yellow: #edbd18;
+  --orange-yellow: #E4B200;
   --red: #79031d;
+  --eerie-black: #141414;
+  --blue-ryb: #0040e4;
+  --input-white: #ffffff;
+  --input-gray: #E9ECEF;
 }
 
 /*header section*/
-.header_section {
-  padding: 15px 0;
+.header {
+  min-height: 121px;
 }
 
-.header_section .container-fluid {
-  padding-right: 25px;
-  padding-left: 25px;
+.header--baby-powder {
+  background-color:#f9f7f3
 }
 
-.custom_nav-container {
-  padding: 0;
+.custom_nav-container .nav_search-btn:hover .header__logo {
+  color: var(--orange-yellow);
 }
 
-.custom_nav-container .navbar-nav {
-  margin-left: auto;
-}
-
-.custom_nav-container .navbar-nav .nav-item .nav-link {
-  padding: 5px 20px;
-  color: #131313;
-  text-align: center;
-  text-transform: uppercase;
-  border-radius: 5px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  font-weight: 900;
+.header__logo {
+  color: var(--eerie-black);
+  font-size: 1.5rem;
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link,
-.custom_nav-container .navbar-nav .nav-item.active .nav-link .logo {
-  color: #edbd18;
+.custom_nav-container .navbar-nav .nav-item.active .nav-link .header__logo--orange-yellow {
+  color: var(--orange-yellow);
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link,
-.custom_nav-container .navbar-nav .nav-item.active .nav-link .logo {
-  fill: #edbd18;
+.custom_nav-container .navbar-nav .nav-item.active .nav-link .header__logo--orange-yellow {
+  fill: var(--orange-yellow);
 }
 
-.custom_nav-container .nav_search-btn {
-  width: 35px;
-  height: 35px;
-  padding: 0;
-  border: none;
-  color: #000000;
+.header__search_btn {
+  background-color: var(--input-white);
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-left: 1px solid var(--input-gray);
+  border-top: 1px solid var(--input-gray);
+  border-bottom: 1px solid var(--input-gray);
 }
 
-.custom_nav-container .nav_search-btn:hover .logo {
-  color: #edbd18;
+.header__search {
+  border: 1px solid var(--input-gray);
 }
 
-.logo {
-  color: black;
-}
-
-a:hover {
-  color: var(--yellow);
-  background-color: transparent;
+.header > a:hover {
+  color: var(--blue-ryb);
   -webkit-transition: all 0.3s;
   transition: all 0.3s
 }
 
-/*font-awsome*/
-
-.fas {
-  color: #000000;
+.header__bag {
+  padding: 5px 8px;
+  border-radius: 10px;
 }
+
+.header__bag--white {
+  color: var(--white);
+}
+
+.header__bag:hover > .header__bag--white,
+.header__bag:hover > .header__bag_icon--white {
+  color: var(--blue-ryb);
+}
+
+.header__bag--orange-yellow {
+  background-color: var(--orange-yellow);
+}
+
+.header__search_icon--blue-ryb {
+  color: var(--blue-ryb);
+}
+
+.header__sub_nav {
+  max-width: 361px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: var(--eerie-black);
+}
+
+/* NavBar Toggler Button */
+
+  /* Icon 1 */
+
+.animated-icon3 {
+  position: relative;
+  margin: 0px;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+}
+
+.animated-icon3 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  left: 0;
+  background-color: var(--eerie-black);
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.animated-icon3 span {
+  background: var(--eerie-black);
+}
+
+  /* Icon 4 */
+
+.animated-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+.animated-icon3 span:nth-child(2) {
+  top: 10px;
+}
+
+.animated-icon3 span:nth-child(3) {
+  top: 20px;
+  transform-origin: left center;
+}
+
+
+/* Hero */
 
 .shop-now-button {
   background: black;
   color: white;
   min-width: 260px;
 }
-
-
-/*end header section*/
 
 /* slider section */
 .slider_section {
@@ -217,9 +277,7 @@ a:hover {
   -ms-flex-align: start;
   align-items: flex-start;
 }
-.font-weight-bold {
-  font-weight: 1000!important;
-}
+
 .heading_container h2 {
   position: relative;
   margin-bottom: 0;
@@ -276,10 +334,6 @@ a:hover {
   transition: all .1s;
   -webkit-transform: translateY(50%);
   transform: translateY(50%);
-}
-
-.fas {
-  color: var(--red)
 }
 
 .btns {
