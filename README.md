@@ -115,11 +115,19 @@ This is an E-commerce website for an online supplement shop. Users can search fo
 
 | ![Home page mobile view when not auth.](/docs/wireframes/Home%20Extra%20small%20_%20576px%20Non%20Auth%20User%20View.png) |
 | :-----------------------------------------------------------------------------------------------------------------------: |
-|                                    **Home Page Desktop View (User Not Authenticated)**                                    |
+|                                    **Home Page Mobile View (User Not Authenticated)**                                     |
 
 | ![Home page mobile view when auth.](/docs/wireframes/Home%20Extra%20small%20_%20576px%20Auth%20User%20View.png) |
 | :-------------------------------------------------------------------------------------------------------------: |
-|                               **Home Page Desktop View (User Is Authenticated)**                                |
+|                                **Home Page Mobile View (User Is Authenticated)**                                |
+
+| ![Products page desktop view](/docs/wireframes/Products%20Extra%20large%20%E2%89%A5%201200px.png) |
+| :-----------------------------------------------------------------------------------------------: |
+|                                  **Products Page Desktop View**                                   |
+
+| ![Products page mobile view](/docs/wireframes/Products%20Extra%20small%20_%20576px.png) |
+| :-------------------------------------------------------------------------------------: |
+|                              **Products Page Mobile View**                              |
 
 ## SQL Database Structure
 
