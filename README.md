@@ -125,6 +125,8 @@ This is an E-commerce website for an online supplement shop. Users can search fo
 | :-------------------------------------------------------------------------------------------------------------: |
 |                                **Home Page Mobile View (User Is Authenticated)**                                |
 
+**Products Page Wireframes:**
+
 | ![Products page desktop view](/docs/wireframes/Products%20Extra%20large%20%E2%89%A5%201200px.png) |
 | :-----------------------------------------------------------------------------------------------: |
 |                                  **Products Page Desktop View**                                   |
