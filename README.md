@@ -103,6 +103,10 @@ This is an E-commerce website for an online supplement shop. Users can search fo
 
 ## UI
 
+**Color Palette**
+
+![Website Color Palette](/docs/images/color-palette.png)
+
 **Home Page Wireframes:**
 
 | ![Home page desktop view when not auth.](/docs/wireframes/Home%20Extra%20large%20%E2%89%A5%201200px%20Non%20Auth%20User%20View.png) |
