@@ -101,6 +101,26 @@ This is an E-commerce website for an online supplement shop. Users can search fo
 - Navbar will contain the website logo.
 - Nav menu on the phone will be activated by clicking on a burger icon.
 
+## UI
+
+**Home Page Wireframes:**
+
+| ![Home page desktop view when not auth.](/docs/wireframes/Home%20Extra%20large%20%E2%89%A5%201200px%20Non%20Auth%20User%20View.png) |
+| :---------------------------------------------------------------------------------------------------------------------------------: |
+|                                         **Home Page Desktop View (User Not Authenticated)**                                         |
+
+| ![Home page desktop view when auth.](/docs/wireframes/Home%20Extra%20large%20%E2%89%A5%201200px%20Non%20Auth%20User%20View.png) |
+| :-----------------------------------------------------------------------------------------------------------------------------: |
+|                                       **Home Page Desktop View (User Is Authenticated)**                                        |
+
+| ![Home page mobile view when not auth.](/docs/wireframes/Home%20Extra%20small%20_%20576px%20Non%20Auth%20User%20View.png) |
+| :-----------------------------------------------------------------------------------------------------------------------: |
+|                                    **Home Page Desktop View (User Not Authenticated)**                                    |
+
+| ![Home page mobile view when auth.](/docs/wireframes/Home%20Extra%20small%20_%20576px%20Auth%20User%20View.png) |
+| :-------------------------------------------------------------------------------------------------------------: |
+|                               **Home Page Desktop View (User Is Authenticated)**                                |
+
 ## SQL Database Structure
 
 This diagram contains and shows the relation of following databases: Order, OrderLineItem, Product, Category, UserProfile.
