@@ -247,6 +247,28 @@ a {
   font-size: 2rem;
 }
 
+/* footer */
+
+.footer__wrapper {
+  background-color: var(--baby-powder);
+}
+
+.footer {
+  padding: 0;
+  min-height: 401px;
+}
+
+.footer__link,
+.footer__link-icon {
+  color: var(--eerie-black);
+}
+
+.footer__link-icon {
+  font-size: 1.5rem;
+}
+
+
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {

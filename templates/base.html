@@ -188,40 +188,40 @@
    </main>
 
    <!--Footer Section-->
-   <footer class="container-fluid">
-      <div class="row">
-         <div class="col-4">
-            <h4>Quality Supplements</h4>
-            <a href="{% url 'contact' %}" class="btn btn-primary">Get in Touch</a>
-            <div class="d-block">
-               <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-               <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-               <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+   <footer class="footer__wrapper">
+      <div class="container footer d-flex flex-row flex-lg-column py-5 h-100">
+         <div class="row footer__row my-auto mx-auto w-100 text-center text-lg-left align-content-center">
+            <div class="col-12 col-lg-4 h-100 flex-fill">
+               <a href="{% url 'home' %}" class="text-decoration-none d-block h4 footer__link font-weight-bold">Quality Supplements</a>
+               <a href="{% url 'contact' %}" class="btn btn-primary d-inline-flex mt-3">Get in Touch</a>
+               <div class="d-block mt-3">
+                  <a href="https://www.twitter.com/" target="_blank" class="footer__link-icon"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank" class="footer__link-icon ml-3 mr-3"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.facebook.com/" target="_blank" class="footer__link-icon"><i class="fab fa-facebook-f"></i></a>
+               </div>
             </div>
-         </div>
-         <div class="col-4">
-            <h5>Services</h5>
-            <ul class="list-unstyled">
-               {% if request.user.is_authenticated %}
-                  <li><a href="{% url 'account_signup' %}">Logout</a></li>
-               {% else %}
-                  <li><a href="{% url 'account_signup' %}">Register</a></li>
-                  <li><a href="{% url 'account_login' %}">Login</a></li>
-               {% endif %}
-               <li><a href="{% url 'products' %}">Products</a></li>
-            </ul>
-         </div>
-         <div class="col-4">
-            <h5>Resources</h5>
-            <ul class="list-unstyled">
-               <li><a href="{% url 'contact' %}">Contact</a></li>
-               <li><a href="{% url 'contact' %}">FAQ</a></li>
-            </ul>
-         </div>
-      </div>
-      <div class="row">
-         <div class="col-12 text-right">
-            <p>© 2022 Quality Supplements. All rights reserved.</p>
+            <div class="col-12 col-lg-2 mt-4 ml-lg-auto text-center text-lg-left">
+               <h5 class="font-weight-bold">Services</h5>
+               <ul class="list-unstyled">
+                  {% if request.user.is_authenticated %}
+                     <li><a href="{% url 'account_signup' %}" class="footer__link font-weight-bold">Logout</a></li>
+                  {% else %}
+                     <li class="mt-1"><a href="{% url 'account_signup' %}" class="footer__link">Register</a></li>
+                     <li class="mt-1"><a href="{% url 'account_login' %}" class="footer__link">Login</a></li>
+                  {% endif %}
+                  <li class="mt-1"><a href="{% url 'products' %}" class="footer__link">Products</a></li>
+               </ul>
+            </div>
+            <div class="col-12 col-lg-3 mt-4 text-center text-lg-left">
+               <h5 class="font-weight-bold">Resources</h5>
+               <ul class="list-unstyled">
+                  <li><a href="{% url 'contact' %}" class="footer__link">Contact</a></li>
+                  <li class="mt-1"><a href="{% url 'contact' %}" class="footer__link">FAQ</a></li>
+               </ul>
+            </div>
+            <div class="col-12 ml-lg-auto text-center text-lg-right mt-4">
+               <p>© 2022 Quality Supplements. All rights reserved.</p>
+            </div>
          </div>
       </div>
    </footer>
