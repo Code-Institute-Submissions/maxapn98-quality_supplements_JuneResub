@@ -36,12 +36,10 @@ def all_products(request):
 
         if 'category' in request.GET:
             category = request.GET['category'].split(',')
-            print(category)
             products = products.filter(
                 product_category__product_category__in=category)
             categories = Category.objects.filter(
                 product_category__in=category)
-            print(categories)
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
