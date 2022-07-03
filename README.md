@@ -135,6 +135,16 @@ This is an E-commerce website for an online supplement shop. Users can search fo
 | :-------------------------------------------------------------------------------------: |
 |                              **Products Page Mobile View**                              |
 
+**Product Page Wireframes:**
+
+| ![Products page desktop view](/docs/wireframes/Product%20Extra%20large%20%E2%89%A5%201200px.png) |
+| :-----------------------------------------------------------------------------------------------: |
+|                                  **Product Page Desktop View**                                   |
+
+| ![Products page mobile view](/docs/wireframes/Product%20small%20_%20576px.png) |
+| :-------------------------------------------------------------------------------------: |
+|                              **Product Page Mobile View**                              |
+
 ## SQL Database Structure
 
 This diagram contains and shows the relation of following databases: Order, OrderLineItem, Product, Category, UserProfile.
