@@ -280,6 +280,12 @@ a {
   max-width: 249px;
 }
 
+
+.product__icon {
+  color: var(--blue-ryb);
+  font-size: 1rem;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
