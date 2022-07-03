@@ -141,16 +141,7 @@ a {
   transform-origin: left center;
 }
 
-
 /* Hero */
-
-.shop-now-button {
-  background: black;
-  color: white;
-  min-width: 260px;
-}
-
-/* slider section */
 
 .hero {
   position: relative;
@@ -222,6 +213,38 @@ a {
 .why-section__icon {
   font-size: 2.5rem;
   color: var(--eerie-black);
+}
+
+/* social media section */
+
+.social-media__wrapper {
+  background: var(--eerie-black);
+}
+
+.social-media {
+  position: relative;
+  min-height: 401px;
+  padding: 0;
+}
+
+.social-media__row {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.social-media__heading {
+  color: var(--baby-powder);
+}
+
+.social-media__subheading {
+  color: var(--baby-powder);
+}
+
+.social-media__link {
+  color: var(--baby-powder);
+  font-size: 2rem;
 }
 
 /* ------------------------------- bootstrap toasts */
