@@ -138,12 +138,12 @@ This is an E-commerce website for an online supplement shop. Users can search fo
 **Product Page Wireframes:**
 
 | ![Products page desktop view](/docs/wireframes/Product%20Extra%20large%20%E2%89%A5%201200px.png) |
-| :-----------------------------------------------------------------------------------------------: |
+| :----------------------------------------------------------------------------------------------: |
 |                                  **Product Page Desktop View**                                   |
 
 | ![Products page mobile view](/docs/wireframes/Product%20small%20_%20576px.png) |
-| :-------------------------------------------------------------------------------------: |
-|                              **Product Page Mobile View**                              |
+| :----------------------------------------------------------------------------: |
+|                          **Product Page Mobile View**                          |
 
 ## SQL Database Structure
 
@@ -175,7 +175,7 @@ This diagram shows the field structure of Message model in the contact app.
 
 **CSS**
 
-| ![Home page css code validation report](/docs/validations/html/home-page.png) |
+| ![Home page css code validation report](/docs/validations/css/home-page.png) |
 | :---------------------------------------------------------------------------: |
 |                        _Home page css code validation_                        |
 
@@ -184,8 +184,14 @@ This diagram shows the field structure of Message model in the contact app.
 **HTML**
 
 | ![Products page html code validation report](/docs/validations/html/products-page.png) |
-| :----------------------------------------------------------------------------: |
-|                        _Products page html code validation_                        |
+| :------------------------------------------------------------------------------------: |
+|                          _Products page html code validation_                          |
+
+**CSS**
+
+| ![Products page css code validation report](/docs/validations/css/products-page.png) |
+| :-------------------------------------------------------------------------------: |
+|                        _Products page css code validation_                        |
 
 ## Deployment
 
