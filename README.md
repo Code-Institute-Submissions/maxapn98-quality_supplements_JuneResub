@@ -153,6 +153,14 @@ This diagram shows the field structure of Message model in the contact app.
 
    - I have implemented view decorators `@login_required` and `@staff_member_required ` in order to fool proof routes that should be accessed only by authenticated or authorized users.
 
+## Validation
+
+**HTML**
+
+| ![Home page html code validation report](/docs/validations/html/home-page.png) |
+| :----------------------------------------------------------------------------: |
+|                        _Home page code validation code_                        |
+
 ## Deployment
 
 Before following any of these steps make sure that you have the latest dependencies installed in your application environment. All of the application dependencies are listed within the requrements.txt file found in project's root directory.
@@ -242,6 +250,8 @@ To install dependencies while in project's root dir. run the following command:
   - Used to create diagrams of database models during initial planing.
 - [coolors.co](https://coolors.co/)
   - Used to create website's color palette.
+- [validator.w3.org](https://validator.w3.org/)
+  - Used to validate html for each website page.
 
 ## Credits
 
