@@ -161,9 +161,13 @@ This diagram shows the field structure of Message model in the contact app.
 
 | ![Home page html code validation report](/docs/validations/html/home-page.png) |
 | :----------------------------------------------------------------------------: |
-|                        _Home page code validation code_                        |
+|                        _Home page html code validation_                        |
 
 **CSS**
+
+| ![Home page css code validation report](/docs/validations/html/home-page.png) |
+| :---------------------------------------------------------------------------: |
+|                        _Home page css code validation_                        |
 
 **JavaScript**
 
