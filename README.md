@@ -179,7 +179,13 @@ This diagram shows the field structure of Message model in the contact app.
 | :---------------------------------------------------------------------------: |
 |                        _Home page css code validation_                        |
 
-**JavaScript**
+### Products App
+
+**HTML**
+
+| ![Products page html code validation report](/docs/validations/html/products-page.png) |
+| :----------------------------------------------------------------------------: |
+|                        _Products page html code validation_                        |
 
 ## Deployment
 
