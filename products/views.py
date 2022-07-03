@@ -1,3 +1,4 @@
+from itertools import product
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
@@ -34,12 +35,21 @@ def all_products(request):
             products = products.order_by(sortkey)
 
         if 'category' in request.GET:
-            categories = request.GET['category'].split(',')
-            print(categories)
+            category = request.GET['category'].split(',')
+            print(category)
             products = products.filter(
-                product_category__in=categories)
+                product_category__product_category__in=category)
             categories = Category.objects.filter(
-                product_category__in=categories)
+                product_category__in=category)
+            print(categories)
+
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                sortkey = "product_category"
+                if direction == "desc":
+                    sortkey = f'-{sortkey}'
+                
+                products = products.order_by(sortkey)
 
         if 'q' in request.GET:
             query = request.GET['q']

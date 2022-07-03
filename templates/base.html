@@ -117,7 +117,7 @@
                         <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                            <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item ">By Price</a>
                            <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
-                           <a href="{% url 'products' %}?sort=product_category&direction=asc" class="dropdown-item ">By Category</a>
+                           <a href="{% url 'products' %}?category=Protein,Creatine,Amino,Vitamins,Bars,Performance&direction=asc" class="dropdown-item ">By Category</a>
                            <a href="{% url 'products' %} " class="dropdown-item">All Products</a>
                         </div>
                      </li>
@@ -127,9 +127,9 @@
                            Nutrition
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="nutrition-link">
-                           <a href="{% url 'products' %}?product_category=Protein" class="dropdown-item">Protein Powder</a>
-                           <a href="{% url 'products' %}?product_category=Creatine" class="dropdown-item">Creatine</a>
-                           <a href="{% url 'products' %}?product_category=Amino" class="dropdown-item">Amino acids</a>
+                           <a href="{% url 'products' %}?category=Protein" class="dropdown-item">Protein Powder</a>
+                           <a href="{% url 'products' %}?category=Creatine" class="dropdown-item">Creatine</a>
+                           <a href="{% url 'products' %}?category=Amino" class="dropdown-item">Amino acids</a>
                         </div>
                      </li>
                      <li class="nav-item dropdown">
@@ -138,7 +138,7 @@
                            Snacks
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="snacks-link">
-                           <a href="{% url 'products' %}?product_category=Bars" class="dropdown-item">Protein bars</a>
+                           <a href="{% url 'products' %}?category=Bars" class="dropdown-item">Protein bars</a>
                         </div>
                      </li>
                      <li class="nav-item dropdown">
@@ -147,8 +147,8 @@
                            Vitamins
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="vitamins-link">
-                           <a href="{% url 'products' %}?product_category=Vitamins" class="dropdown-item">Vitamins and Minerals</a>
-                           <a href="{% url 'products' %}?product_category=Performance" class="dropdown-item">Sports Performance</a>
+                           <a href="{% url 'products' %}?category=Vitamins" class="dropdown-item">Vitamins and Minerals</a>
+                           <a href="{% url 'products' %}?category=Performance" class="dropdown-item">Sports Performance</a>
                         </div>
                      </li>
                </ul>
