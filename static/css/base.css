@@ -14,6 +14,7 @@ a {
   --blue-ryb: #0040e4;
   --input-white: #ffffff;
   --input-gray: #E9ECEF;
+  --baby-powder: #F9F7F3;
 }
 
 /*header section*/
@@ -208,6 +209,20 @@ a {
 }
 
 /*why section*/
+
+.why-section__wrapper {
+  background: var(--baby-powder);
+}
+
+.why-section {
+  position: relative;
+  min-height: 401px;  
+}
+
+.why-section__icon {
+  font-size: 2.5rem;
+  color: var(--eerie-black);
+}
 
 /* ------------------------------- bootstrap toasts */
 
