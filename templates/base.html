@@ -127,31 +127,31 @@
                         </div>
                      </li>
                      <li class="nav-item dropdown">
-                        <a class="logo-font font-weight-bold nav-link text-black" href="#" id="clothing-link"
+                        <a class="logo-font font-weight-bold nav-link text-black" href="#" id="nutrition-link"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                            Nutrition
                         </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+                        <div class="dropdown-menu border-0" aria-labelledby="nutrition-link">
                            <a href="{% url 'products' %}?product_category=Protein" class="dropdown-item">Protein Powder</a>
                            <a href="{% url 'products' %}?product_category=Creatine" class="dropdown-item">Creatine</a>
                            <a href="{% url 'products' %}?product_category=Amino" class="dropdown-item">Amino acids</a>
                         </div>
                      </li>
                      <li class="nav-item dropdown">
-                        <a class="logo-font font-weight-bold nav-link text-black" href="#" id="homeware-link"
+                        <a class="logo-font font-weight-bold nav-link text-black" href="#" id="snacks-link"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                            Snacks
                         </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
+                        <div class="dropdown-menu border-0" aria-labelledby="snacks-link">
                            <a href="{% url 'products' %}?product_category=Bars" class="dropdown-item">Protein bars</a>
                         </div>
                      </li>
                      <li class="nav-item dropdown">
-                        <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown"
+                        <a class="logo-font font-weight-bold nav-link text-black" href="#" id="vitamins-link" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
                            Vitamins
                         </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+                        <div class="dropdown-menu border-0" aria-labelledby="vitamins-link">
                            <a href="{% url 'products' %}?product_category=Vitamins" class="dropdown-item">Vitamins and Minerals</a>
                            <a href="{% url 'products' %}?product_category=Performance" class="dropdown-item">Sports Performance</a>
                         </div>
@@ -228,7 +228,7 @@
 
    <!--Post Load JS-->
    {% block postloadjs %}
-      <script type="text/javascript">
+      <script>
          $('.toast').toast('show');
       </script>
    {% endblock %}

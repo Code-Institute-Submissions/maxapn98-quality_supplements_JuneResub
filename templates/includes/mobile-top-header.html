@@ -1,11 +1,11 @@
 <div class="d-flex d-lg-none w-100 mt-3">
     <!--Collapse Button-->
-    <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#header__mobile_menu" aria-controls="eader__mobile_menu" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="animated-icon3">
+    <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#header__mobile_menu" aria-controls="header__mobile_menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="animated-icon3">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </span>
     </button>
     <!--Bag Btn-->
     <div class="nav-item ml-auto header__bag header__bag--orange-yellow">
@@ -23,11 +23,11 @@
 <div class="collapse d-lg-none w-100" id="header__mobile_menu">
     <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown mt-2">   
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="all-products-link"
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="all-products-mobile-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-mobile-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item ">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products' %}?sort=product_category&direction=asc" class="dropdown-item ">By Category</a>
@@ -35,31 +35,31 @@
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="nutrition-mobile-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Nutrition
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+            <div class="dropdown-menu border-0" aria-labelledby="nutrition-mobile-link">
                 <a href="{% url 'products' %}?product_category=Protein" class="dropdown-item">Protein Powder</a>
                 <a href="{% url 'products' %}?product_category=Creatine" class="dropdown-item">Creatine</a>
                 <a href="{% url 'products' %}?product_category=Amino" class="dropdown-item">Amino acids</a>
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="snacks-mobile-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Snacks
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
+            <div class="dropdown-menu border-0" aria-labelledby="snacks-mobile-link">
                 <a href="{% url 'products' %}?product_category=Bars" class="dropdown-item">Protein bars</a>
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown"
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="vitamins-mobile-link" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 Vitamins
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+            <div class="dropdown-menu border-0" aria-labelledby="vitamins-mobile-link">
                 <a href="{% url 'products' %}?product_category=Vitamins" class="dropdown-item">Vitamins and Minerals</a>
                 <a href="{% url 'products' %}?product_category=Performance" class="dropdown-item">Sports Performance</a>
             </div>
