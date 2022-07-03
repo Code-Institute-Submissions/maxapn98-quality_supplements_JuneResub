@@ -262,6 +262,8 @@ To install dependencies while in project's root dir. run the following command:
   - Used to create website's color palette.
 - [validator.w3.org](https://validator.w3.org/)
   - Used to validate html for each website page.
+- [jigsaw.w3.org](https://jigsaw.w3.org/css-validator/)
+  - Used to validate css for each website page.
 
 ## Credits
 
