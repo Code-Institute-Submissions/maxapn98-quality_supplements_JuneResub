@@ -76,13 +76,21 @@ def all_products(request):
 def product_detail(request, product_id):
     """ A view to show individual product details """
 
+    # Query product from db
     product = get_object_or_404(Product, pk=product_id)
+    # Query product's reviews from db 
+    reviews = Review.objects.all()
+    reviews = reviews.filter(product=product)
+    # Create Review form for posting reviews
     form = ReviewForm()
 
+    # Context
     context = {
         "form": form,
         'product': product,
+        "reviews": reviews,
     }
+
     return render(request, 'products/product_detail.html', context)
 
 
