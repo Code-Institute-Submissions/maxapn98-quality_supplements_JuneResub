@@ -145,6 +145,26 @@ This is an E-commerce website for an online supplement shop. Users can search fo
 | :----------------------------------------------------------------------------: |
 |                          **Product Page Mobile View**                          |
 
+**Add Product Page Wireframes:**
+
+| ![Add Product page desktop view](/docs/wireframes/Add%20Product%20Extra%20large%20%E2%89%A5%201200px.png) |
+| :-------------------------------------------------------------------------------------------------------: |
+|                                     **Add Product Page Desktop View**                                     |
+
+| ![Add Product page mobile view](/docs/wireframes/Add%20Product%20small%20_%20576px.png) |
+| :-------------------------------------------------------------------------------------: |
+|                            **Add Product Page Mobile View**                             |
+
+**Edit Product Page Wireframes:**
+
+| ![Edit Product page desktop view](/docs/wireframes/Edit%20Product%20Extra%20large%20%E2%89%A5%201200px.png) |
+| :---------------------------------------------------------------------------------------------------------: |
+|                                      **Edit Product Page Desktop View**                                      |
+
+| ![Edit Product page mobile view](/docs/wireframes/Edit%20Product%20small%20_%20576px.png) |
+| :---------------------------------------------------------------------------------------: |
+|                             **Edit Product Page Mobile View**                             |
+
 ## SQL Database Structure
 
 This diagram contains and shows the relation of following databases: Order, OrderLineItem, Product, Category, UserProfile.
@@ -176,8 +196,8 @@ This diagram shows the field structure of Message model in the contact app.
 **CSS**
 
 | ![Home page css code validation report](/docs/validations/css/home-page.png) |
-| :---------------------------------------------------------------------------: |
-|                        _Home page css code validation_                        |
+| :--------------------------------------------------------------------------: |
+|                       _Home page css code validation_                        |
 
 ### Products App
 
@@ -190,8 +210,8 @@ This diagram shows the field structure of Message model in the contact app.
 **CSS**
 
 | ![Products page css code validation report](/docs/validations/css/products-page.png) |
-| :-------------------------------------------------------------------------------: |
-|                        _Products page css code validation_                        |
+| :----------------------------------------------------------------------------------: |
+|                         _Products page css code validation_                          |
 
 ## Deployment
 
