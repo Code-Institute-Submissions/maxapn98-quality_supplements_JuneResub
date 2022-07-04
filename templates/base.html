@@ -199,7 +199,7 @@
                <h5 class="font-weight-bold">Services</h5>
                <ul class="list-unstyled">
                   {% if request.user.is_authenticated %}
-                     <li><a href="{% url 'account_signup' %}" class="footer__link font-weight-bold">Logout</a></li>
+                     <li><a href="{% url 'account_signup' %}" class="footer__link">Logout</a></li>
                   {% else %}
                      <li class="mt-1"><a href="{% url 'account_signup' %}" class="footer__link">Register</a></li>
                      <li class="mt-1"><a href="{% url 'account_login' %}" class="footer__link">Login</a></li>
