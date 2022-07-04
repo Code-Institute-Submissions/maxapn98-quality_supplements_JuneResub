@@ -1,9 +1,10 @@
-from itertools import product
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404, reverse
+from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 from django.contrib.admin.views.decorators import staff_member_required
+from pkg_resources import require
 from .models import Product, Category, Review
 from .forms import ProductForm, ReviewForm
 
@@ -46,7 +47,7 @@ def all_products(request):
                 sortkey = "product_category"
                 if direction == "desc":
                     sortkey = f'-{sortkey}'
-                
+
                 products = products.order_by(sortkey)
 
         if 'q' in request.GET:
@@ -76,8 +77,10 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    form = ReviewForm()
 
     context = {
+        "form": form,
         'product': product,
     }
     return render(request, 'products/product_detail.html', context)
@@ -148,30 +151,22 @@ def delete_product(request, product_id):
 
 
 @login_required
-@staff_member_required
+@require_POST
 def add_review(request, product_id):
     """add review to product"""
-    product = get_object_or_404(Product, pk=product_id)
-    if request.method == 'POST':
-        form = ReviewForm(request.POST, instance=product)
-        if form.is_valid():
-            name = form.cleaned_data['name']
-            comment = form.cleaned_data['comment']
-            Review.objects.create(
-                product=get_object_or_404(Product, pk=product_id),
-                name=name,
-                comment=comment)
-            messages.success(request, 'Successfully added review.')
-            return redirect(reverse('product_detail', args=[product_id]))
-        else:
-            messages.error(
-                request, 'Failed to add Review. Please ensure the form is valid.')
-    else:
-        form = ReviewForm()
-    template = 'products/add_review.html'
-    context = {
-        'form': form,
-        'product': product,
-    }
+    
+    reviewForm = ReviewForm(request.POST or None)
+    # Check if the review form inputs are valid
+    if reviewForm.is_valid():
+        # Get body context of the review
+        body = request.POST.get("body")
 
-    return render(request, template, context)
+        # Query product that is being reviewed
+        product = get_object_or_404(Product, pk=product_id)
+
+        # Create a review object
+        review = Review.objects.create(product=product, user=request.user, body=body)
+        review.save()
+        return redirect(reverse("product_detail", args=(product_id,)))
+    else:
+        return redirect(reverse("product_detail", args=(product_id,)))
