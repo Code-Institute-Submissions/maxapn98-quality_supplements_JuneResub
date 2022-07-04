@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.utils import timezone
 
 
 class Category(models.Model):
@@ -34,9 +33,12 @@ class Product(models.Model):
 
 class Review(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name ='comments')
-    name =  models.CharField(max_length=100)
-    comment = models.TextField(max_length=500, null=True, blank=True)
-    date_posted = models.DateTimeField(default=timezone.now)
+    user =  models.ForeignKey(User, on_delete=models.CASCADE)
+    body = models.TextField(max_length=500, null=True, blank=True)
+    date_added = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-date_added']
 
     def __str__(self):
-        return self.name
+        return self.user.name
