@@ -17,7 +17,10 @@ class ProductForm(forms.ModelForm):
 
 
 class ReviewForm(forms.ModelForm):
-    body = forms.CharField(label="Review")
+    body = forms.CharField(label="Review", widget=forms.Textarea(attrs={
+        "rows": 4,
+        "cols": 50,
+    }))
 
     class Meta:
         model = Review
@@ -25,8 +28,3 @@ class ReviewForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-
-        body = forms.CharField(required=True)
-        placeholders = {
-            'body': 'What do you think of this product?',
-        }
