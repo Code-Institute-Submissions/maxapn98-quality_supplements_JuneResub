@@ -9,12 +9,42 @@ a {
 :root {
   --white: #f5f7f7;
   --orange-yellow: #E4B200;
-  --red: #79031d;
+  --red: #FF543E;
   --eerie-black: #141414;
   --blue-ryb: #0040e4;
   --input-white: #ffffff;
   --input-gray: #E9ECEF;
   --baby-powder: #F9F7F3;
+}
+
+/* Btn Styles */
+
+.btn-primary {
+  color: var(--white);
+  font-weight: 550;
+  background-color: var(--blue-ryb);
+  border-color: var(--blue-ryb);
+}
+
+.btn-warning {
+  color: var(--white);
+  font-weight: 550;
+  background-color: var(--orange-yellow);
+  border-color: var(--orange-yellow);
+}
+
+.btn-danger {
+  color: var(--white);
+  font-weight: 550;
+  background-color: var(--red);
+  border-color: var(--red);
+}
+
+.btn-secondary {
+  color: var(--eerie-black);
+  font-weight: 550;
+  background-color: var(--input-gray);
+  border-color: var(--input-gray);
 }
 
 /*header section*/
