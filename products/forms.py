@@ -17,15 +17,16 @@ class ProductForm(forms.ModelForm):
 
 
 class ReviewForm(forms.ModelForm):
+    body = forms.CharField(label="Review")
 
     class Meta:
         model = Review
-        fields = '__all__'
+        fields = ('body',)
 
     def __init__(self, *args, **kwargs):
-        
         super().__init__(*args, **kwargs)
+
+        body = forms.CharField(required=True)
         placeholders = {
-            'name': 'name',
-            'comment': 'comment',
+            'body': 'What do you think of this product?',
         }
