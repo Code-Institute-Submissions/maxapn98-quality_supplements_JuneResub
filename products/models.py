@@ -41,4 +41,4 @@ class Review(models.Model):
         ordering = ['-date_added']
 
     def __str__(self):
-        return self.user.name
+        return self.user.username
