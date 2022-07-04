@@ -93,35 +93,48 @@
                         <p class="h4 mb-0">Customer Reviews</p>
                     </div>
                     <div class="col-12 col-lg-8 text-lg-right mt-3 mt-lg-0">
-                        <button class="btn btn-primary">Review Product</button>
+                        <button class="btn btn-primary" id="review-product-btn" type="button" data-toggle="collapse" data-target="#review__col" aria-expanded="false" aria-controls="review__col">Review Product</button>
                     </div>
                 </div>
             </div>
             <!--Review Cards-->
+            <div class="col-12 collapse multi-collapse" id="review__col">
+                <form method="POST" action="{% url 'add_review' product.id %}" class="form mt-3">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        {{ form | crispy }}
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-primary" type="submit">Add Review</button>
+                    </div>
+                </form>
+            </div>
             <div class="col-12 mt-3">
                 <!--Review Card-->
-                <div class="row review mt-4 mb-3">
-                    <!--Review Image-->
-                    <div class="d-none d-lg-block col-lg-1">
-                        <img class="img-fluid review__image" src="{% static 'img/place-holder.png' %}" alt="">
-                    </div>
-                    <!--Review Context-->
-                    <div class="col-10">
-                        <!--Review Body-->
-                        <div class="row">
-                            <div class="col-12 d-flex flex-column flex-lg-row align-items-baseline justify-content-between">
-                                <p class="mb-0 review__name">John Doe</p>
-                                <p class="mb-0 review__date mt-1 mb-2 mb-lg-0 mt-lg-0">Date when created</p>
-                            </div>
-                            <div class="col-12">
-                                <p class="mb-0">
-                                    Body context of the review
-                                </p>
+                {% for review in reviews %}
+                    <div class="row review mt-4 mb-3">
+                        <!--Review Image-->
+                        <div class="d-none d-lg-block col-lg-1">
+                            <img class="img-fluid review__image" src="{% static 'img/place-holder.png' %}" alt="">
+                        </div>
+                        <!--Review Context-->
+                        <div class="col-10">
+                            <!--Review Body-->
+                            <div class="row">
+                                <div class="col-12 d-flex flex-column flex-lg-row align-items-baseline justify-content-between">
+                                    <p class="mb-0 review__name">{{review}}</p>
+                                    <p class="mb-0 review__date mt-1 mb-2 mb-lg-0 mt-lg-0">{{review.date_added}}</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="mb-0">
+                                        {{review.body}}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <hr>
+                    <hr>
+                {% endfor %}
             </div>
         </div>
     </div>
@@ -211,5 +224,8 @@
     submitBtn.click(function() {
         addToBagForm.trigger("submit");
     });
+
+
+    let reviewProduct = $("#review-product-btn");
 </script>
 {% endblock %}
