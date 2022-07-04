@@ -286,6 +286,20 @@ a {
   font-size: 1rem;
 }
 
+/* product */
+
+#add-to-bag-form {
+  max-width: 205px;
+}
+
+.review__image {
+  border-radius: 21px;
+}
+
+.review__name {
+  font-size: 1.3rem
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
