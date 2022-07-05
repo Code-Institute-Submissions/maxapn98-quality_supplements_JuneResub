@@ -12,6 +12,9 @@
             <div class="col-12 text-center mt-3">
                 <h1>Products</h1>
                 <hr class="w-50 mb-1" />
+                {% if request.user.is_superuser %}
+                    <a href="{% url 'add_product' %}" class="btn btn-primary text-right mt-3">Add Product</a>
+                {% endif %}
             </div>
         </div>
         <!--Search-->
