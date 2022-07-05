@@ -78,7 +78,7 @@ def product_detail(request, product_id):
 
     # Query product from db
     product = get_object_or_404(Product, pk=product_id)
-    # Query product's reviews from db 
+    # Query product's reviews from db
     reviews = Review.objects.all()
     reviews = reviews.filter(product=product)
     # Create Review form for posting reviews
@@ -124,19 +124,26 @@ def add_product(request):
 def edit_product(request, product_id):
     """ Edit a product in the store """
 
+    # Query product from db to be edited
     product = get_object_or_404(Product, pk=product_id)
+
     if request.method == 'POST':
+        # Create Product form and pass it data received
         form = ProductForm(request.POST, request.FILES, instance=product)
+
+        # Check if the form data is valid
         if form.is_valid():
+            # If valid save
             form.save()
+
             messages.success(request, 'Successfully updated product!')
+
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(
                 request, 'Failed to update product. Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
-        messages.info(request, f'You are editing {product.product_name}')
 
     template = 'products/edit_product.html'
     context = {
@@ -162,7 +169,7 @@ def delete_product(request, product_id):
 @require_POST
 def add_review(request, product_id):
     """add review to product"""
-    
+
     reviewForm = ReviewForm(request.POST or None)
     # Check if the review form inputs are valid
     if reviewForm.is_valid():
@@ -173,7 +180,8 @@ def add_review(request, product_id):
         product = get_object_or_404(Product, pk=product_id)
 
         # Create a review object
-        review = Review.objects.create(product=product, user=request.user, body=body)
+        review = Review.objects.create(
+            product=product, user=request.user, body=body)
         review.save()
         return redirect(reverse("product_detail", args=(product_id,)))
     else:
