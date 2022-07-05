@@ -330,6 +330,15 @@ a {
   font-size: 1.3rem
 }
 
+.product__category {
+  color: var(--eerie-black);
+}
+
+.product__icon {
+  font-size: 1.2rem;
+  color: var(--blue-ryb);
+}
+
 /* product edit */
 
 input[name="image"]::file-selector-button{
