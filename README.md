@@ -227,6 +227,10 @@ This diagram shows the field structure of Message model in the contact app.
 
 ![contact app model](/docs/images/message-diagram.png)
 
+This diagram shows the field structure of Review model in product app.
+
+![contact app model](/docs/images/reviews-db-model.png)
+
 ## Testing
 
 **Navigation:**
