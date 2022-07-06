@@ -186,3 +186,23 @@ def add_review(request, product_id):
         return redirect(reverse("product_detail", args=(product_id,)))
     else:
         return redirect(reverse("product_detail", args=(product_id,)))
+
+
+@login_required
+def delete_review(request, review_id):
+    """Delete review"""
+    
+    # Find Review
+    review = get_object_or_404(Review, pk=review_id)
+
+    # Extract product id for redirecting
+    product_id = review.product.id
+
+    # Check if the user has the auth right to remove the review
+    if review.user.id == request.user.id:
+        review.delete()
+        messages.success(request, "Review Deleted!")
+        return redirect(reverse("product_detail", args=(product_id,)))
+    else:
+        messages.warning(request, "You don't have authorization to do that.")
+        return redirect(reverse("product_detail", args=(product_id,)))
