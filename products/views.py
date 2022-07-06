@@ -5,6 +5,8 @@ from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 from django.contrib.admin.views.decorators import staff_member_required
 from pkg_resources import require
+
+import products
 from .models import Product, Category, Review
 from .forms import ProductForm, ReviewForm
 
@@ -104,7 +106,7 @@ def add_product(request):
         if form.is_valid():
             product = form.save()
             messages.success(request, 'Successfully added product!')
-            return redirect(reverse('product_detail', args=[product.id]))
+            return redirect(reverse('product_detail', args=(product.id,)))
         else:
             messages.error(
                 request, 'Failed to add product. Please ensure the form is valid.')
@@ -138,7 +140,7 @@ def edit_product(request, product_id):
 
             messages.success(request, 'Successfully updated product!')
 
-            return redirect(reverse('product_detail', args=[product.id]))
+            return redirect(reverse('product_detail', args=(product.id,)))
         else:
             messages.error(
                 request, 'Failed to update product. Please ensure the form is valid.')
@@ -189,9 +191,46 @@ def add_review(request, product_id):
 
 
 @login_required
+def edit_review(request, review_id):
+    """Edit Review of a product"""
+    # Review to be edited
+    review = get_object_or_404(Review, pk=review_id)
+
+    # All Reviews
+    reviews = Review.objects.all()
+
+    # Product that is reviewed
+    product = get_object_or_404(Product, pk=review.product.id)
+
+    if request.method == "POST":
+        form = ReviewForm(request.POST, instance=review)
+
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated review!')
+            return redirect(reverse('product_detail', args=(product.id,)))
+        else:
+            messages.error(
+                request, 'Failed to update Review. Please ensure the form is valid.')
+
+    form = ReviewForm(instance=review)
+    template = 'products/product_detail.html'
+    # Context
+    context = {
+        "form": form,
+        'product': product,
+        "reviews": reviews,
+        "edit": "true",
+        "edit_id": review.id,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
 def delete_review(request, review_id):
     """Delete review"""
-    
+
     # Find Review
     review = get_object_or_404(Review, pk=review_id)
 
