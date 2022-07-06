@@ -382,6 +382,19 @@ input[name="image"]::file-selector-button:focus{
   flex-grow: 1;
 }
 
+/* contact */
+
+.faq__card {
+  background-color: var(--baby-powder);
+  border: none;
+  color: var(--eerie-black);
+}
+
+.faq__card > .card-header {
+  border: none;
+  background-color: var(--baby-powder);
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {

@@ -7,38 +7,96 @@
 {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+    {{ block.super }}
 {% endblock %}
 
 {% block content %}
-<div class="contact-wrapper">
-    <div class="container justify-content-center">
-        <div class="row shadow-lg bg-color-kh rounded justify-content-center align-items-center">
-            <div class="col-12 col-md-6">
-                <!--Contact info-->
-                <div>
-                    <h1 class="text-center mt-5 mt-md-0">Quality Supplement</h1>
-                    <h4 class="my-3 d-none d-sm-block text-center">Send us a message and we’ll get
-                        right back in touch.
-                    </h4>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12">
+                <!--Heading-->
+                <h1 class="text-center mt-md-0">Contact & FAQ</h1>
+                <hr>
+            </div>
+            <!--FAQ Section-->
+            <div class="col-12 col-md-6 mt-5 accordion" id="faq">
+                <!--Ordering FAQ-->
+                <h2 class="mb-4">Ordering</h2>
+                <!--Ordering FAQ item one-->
+                <div class="card faq__card">
+                    <div class="card-header" id="faq__item1-heading">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseItem1" aria-expanded="false" aria-controls="collapseItem1">
+                          How old do you have to be to shop?
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseItem1" class="collapse" aria-labelledby="faq__item1-heading" data-parent="#faq">
+                      <div class="card-body">
+                        To be able to order from Quality Supplements, you must be 18 years of age or older.
+                      </div>
+                    </div>
+                </div>
+                <!--Ordering FAQ item two-->
+                <div class="card faq__card mt-4">
+                    <div class="card-header" id="faq__item2-heading">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseItem2" aria-expanded="false" aria-controls="collapseItem2">
+                            Can I change or cancel my order?
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseItem2" class="collapse" aria-labelledby="faq__item2-heading" data-parent="#faq">
+                      <div class="card-body">
+                        We have the opportunity to make certain types of changes or cancel your order as long as the order has not been printed out in our warehouse.
+                      </div>
+                    </div>
+                </div>
+                <!--Payment FAQ-->
+                <h2 class="mb-4 mt-4">Payment</h2>
+                <!--Payment FAQ item one-->
+                <div class="card faq__card">
+                    <div class="card-header" id="faq__item3-heading">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseItem3" aria-expanded="false" aria-controls="collapseItem3">
+                            Which debit cards do I have the opportunity to pay with?
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseItem3" class="collapse" aria-labelledby="faq__item3-heading" data-parent="#faq">
+                      <div class="card-body">
+                        You have the opportunity to complete your purchase through Card Payment if you use a German card issued by VISA or MasterCard. It is also possible to pay with a card issued by a foreign bank.
+                      </div>
+                    </div>
+                </div>
+                <!--Payment FAQ item two-->
+                <div class="card faq__card mt-4">
+                    <div class="card-header" id="faq__item4-heading">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseItem4" aria-expanded="false" aria-controls="collapseItem4">
+                            How do I receive my invoice?
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseItem4" class="collapse" aria-labelledby="faq__item4-heading" data-parent="#faq">
+                      <div class="card-body">
+                        All our invoices are handled by the invoicing company Stripe, which sends your invoice to the specified e-mail address in the order. The invoice is activated only after we have sent your order from our warehouse.
+                      </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+            <!--Contact Section-->
+            <div class="col-12 col-md-6 mt-5">
                 <!--Form-->
+                <h2 class="mt-4 mt-lg-0 mb-4">Contact Form</h2>
                 <form method="POST" action="{% url 'contact' %}" class="form mb-2" id="contact-form">
                     {% csrf_token %}
                     {{ form | crispy }}
                     <div class="text-right">
-                        <button class="btns rounded-0" type="submit">Send Message</button>
+                        <button class="btn btn-primary" type="submit">Send Message</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-</div>
-
 {% endblock %}
