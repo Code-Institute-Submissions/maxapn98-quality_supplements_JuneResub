@@ -367,6 +367,21 @@ input[name="image"]::file-selector-button:focus{
   box-shadow: 0 0 0 0.2rem rgb(130 138 145 / 50%);
 }
 
+/* bag */
+
+.bag {
+  min-height: 30rem;
+}
+
+
+.bag__table-wrapper {
+  height: 100%;
+}
+
+.bag__row {
+  flex-grow: 1;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
