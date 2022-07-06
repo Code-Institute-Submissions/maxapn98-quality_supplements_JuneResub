@@ -185,6 +185,36 @@ This is an E-commerce website for an online supplement shop. Users can search fo
 | :-------------------------------------------------------------------: |
 |                       **Bag Page Mobile View**                        |
 
+**Checkout Page Wireframes:**
+
+| ![Checkout page desktop view](/docs/wireframes/Checkout%20Extra%20large%20%E2%89%A5%201200px.png) |
+| :-----------------------------------------------------------------------------------------------: |
+|                                  **Checkout Page Desktop View**                                   |
+
+| ![Checkout page mobile view](/docs/wireframes/Checkout%20small%20_%20576px.png) |
+| :-----------------------------------------------------------------------------: |
+|                          **Checkout Page Mobile View**                          |
+
+**Login Page Wireframes:**
+
+| ![Login page desktop view](/docs/wireframes/Log%20In%20Extra%20large%20%E2%89%A5%201200px.png) |
+| :--------------------------------------------------------------------------------------------: |
+|                                 **Checkout Page Desktop View**                                 |
+
+| ![Login page mobile view](/docs/wireframes/Log%20In%20small%20_%20576px.png) |
+| :--------------------------------------------------------------------------: |
+|                        **Checkout Page Mobile View**                         |
+
+**Profile Page Wireframes:**
+
+| ![Profile page desktop view](/docs/wireframes/Profile%20Extra%20large%20%E2%89%A5%201200px.png) |
+| :----------------------------------------------------------------------------------------------: |
+|                                  **Profile Page Desktop View**                                   |
+
+| ![Profile page mobile view](/docs/wireframes/Profile%20small%20_%20576px.png) |
+| :----------------------------------------------------------------------------: |
+|                          **Profile Page Mobile View**                          |
+
 ## SQL Database Structure
 
 This diagram contains and shows the relation of following databases: Order, OrderLineItem, Product, Category, UserProfile.
