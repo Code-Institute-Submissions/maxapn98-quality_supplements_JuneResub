@@ -159,11 +159,21 @@ This is an E-commerce website for an online supplement shop. Users can search fo
 
 | ![Edit Product page desktop view](/docs/wireframes/Edit%20Product%20Extra%20large%20%E2%89%A5%201200px.png) |
 | :---------------------------------------------------------------------------------------------------------: |
-|                                      **Edit Product Page Desktop View**                                      |
+|                                     **Edit Product Page Desktop View**                                      |
 
 | ![Edit Product page mobile view](/docs/wireframes/Edit%20Product%20small%20_%20576px.png) |
 | :---------------------------------------------------------------------------------------: |
 |                             **Edit Product Page Mobile View**                             |
+
+**Contact & FAQ Page Wireframes:**
+
+| ![Contact & FAQ page desktop view](/docs/wireframes/Contact%20Extra%20large%20%E2%89%A5%201200px.png) |
+| :---------------------------------------------------------------------------------------------------: |
+|                                  **Contact & FAQ Page Desktop View**                                  |
+
+| ![Contact & FAQ page mobile view](/docs/wireframes/Contact%20small%20_%20576px.png) |
+| :---------------------------------------------------------------------------------: |
+|                         **Contact & FAQ Page Mobile View**                          |
 
 ## SQL Database Structure
 
