@@ -94,19 +94,26 @@
                         <p class="h4 mb-0">Customer Reviews</p>
                     </div>
                     <div class="col-12 col-lg-8 text-lg-right mt-3 mt-lg-0">
-                        <button class="btn btn-primary" id="review-product-btn" type="button" data-toggle="collapse" data-target="#review__col" aria-expanded="false" aria-controls="review__col">Review Product</button>
+                        {% if edit %}
+                        {% else %}
+                            <button class="btn btn-primary" id="review-product-btn" type="button" data-toggle="collapse" data-target="#review__col" aria-expanded="false" aria-controls="review__col">Review Product</button>
+                        {% endif %}
                     </div>
                 </div>
             </div>
             <!--Review Cards-->
-            <div class="col-12 collapse multi-collapse" id="review__col">
-                <form method="POST" action="{% url 'add_review' product.id %}" class="form mt-3">
+            <div class="col-12 collapse multi-collapse {% if edit %} show {% endif %}" id="review__col">
+                <form method="POST" action="{% if edit %}{% url "edit_review" edit_id %}{% else %}{% url 'add_review' product.id %}{% endif %}" class="form mt-3">
                     {% csrf_token %}
                     <div class="form-group">
                         {{ form | crispy }}
                     </div>
                     <div class="text-right">
-                        <button class="btn btn-primary" type="submit">Add Review</button>
+                        {% if edit %}
+                            <button class="btn btn-primary" type="submit">Update Review</button>
+                        {% else %}
+                            <button class="btn btn-primary" type="submit">Add Review</button>
+                        {% endif %}
                     </div>
                 </form>
             </div>
@@ -128,8 +135,9 @@
                                     <p class="mb-0 review__name">{{review}}</p>
                                     <div>
                                         <p class="mb-0 review__date mt-1 mb-2 mb-lg-0 mt-lg-0">{{review.date_added}}</p>
-                                        {% if review.user == request.user %}
+                                        {% if review.user == request.user and not edit%}
                                             <a href="{% url 'delete_review' review.id %}" class="btn btn-danger mt-1"><i class="fas fa-trash-alt"></i> Delete</a>
+                                            <a href="{% url 'edit_review' review.id %}" class="btn btn-warning ml-2"><i class="fas fa-cog"></i> Edit</a>
                                         {% endif %}
                                     </div>
                                 </div>
