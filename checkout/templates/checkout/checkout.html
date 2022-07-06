@@ -11,19 +11,17 @@
 {% endblock %}
 
 {% block content %}
-<div class="overlay"></div>
-<div class="container">
+<div class="container py-5">
     <div class="row">
-        <div class="col">
-            <hr>
-            <h2 class="logo-font mb-4 text-center">Checkout</h2>
+        <div class="col-12">
+            <h1 class="logo-font mb-4 text-center">Checkout</h1>
             <hr>
         </div>
     </div>
 
     <div class="row">
         <div class="col-12 col-lg-6 order-lg-last mb-5">
-            <p class="text-muted">Order Summary ({{ product_count }})</p>
+            <p class="font-weight-bold">Order Summary ({{ product_count }})</p>
             <div class="row">
                 <div class="col-7 offset-2">
                     <p class="mb-1 mt-0 small text-muted">Item</p>
@@ -55,19 +53,20 @@
             <hr class="my-0">
             <div class="row text-black text-right">
                 <div class="col-7 offset-2">
-                    <p class="my-0">Order Total:</p>
-                    <p class="my-0">Delivery:</p>
-                    <p class="my-0">Grand Total:</p>
+                    <p class="my-0 font-weight-bold">Order Total:</p>
+                    <p class="my-0 mt-1">Delivery:</p>
+                    <p class="mt-4 mb-0 font-weight-bold">Grand Total:</p>
                 </div>
                 <div class="col-3">
                     <p class="my-0">${{ total | floatformat:2 }}</p>
-                    <p class="my-0">${{ delivery | floatformat:2 }}</p>
-                    <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
+                    <p class="my-0 mt-1">${{ delivery | floatformat:2 }}</p>
+                    <p class="my-0 mt-4"><strong>${{ grand_total | floatformat:2 }}</strong></p>
                 </div>
             </div>
         </div>
         <div class="col-12 col-lg-6">
-            <p class="text-muted">Please fill out the form below to complete your order</p>
+            <h2>Delivery Information</h2>
+            <p class="text-muted">Please fill out the form below to complete your order.</p>
             <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                 {% csrf_token %}
                 <fieldset class="rounded px-3 mb-5">
@@ -110,19 +109,19 @@
                 </fieldset>
 
                 <div class="submit-button text-right mt-5 mb-2">
-                    <a href="{% url 'view_bag' %}" class="btns text-decoration-none rounded-0">
+                    <a href="{% url 'view_bag' %}" class="btn btn-secondary">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
                         <span class="font-weight-bold">Adjust Bag</span>
                     </a>
-                    <button id="submit-button" class="btns rounded-0">
+                    <button id="submit-button" class="btn btn-primary ml-2">
                         <span class="font-weight-bold">Complete Order</span>
                         <span class="icon">
                             <i class="fas fa-lock"></i>
                         </span>
                     </button>
-                    <p class="small text-danger my-0">
+                    <p class="small text-danger mb-0 mt-2">
                         <span class="icon">
                             <i class="fas fa-exclamation-circle"></i>
                         </span>
@@ -134,11 +133,11 @@
     </div>
 </div>
 <div id="loading-overlay">
-    <h1 class="text-light logo-font loading-spinner">
+    <p class="text-light logo-font h1 loading-spinner">
         <span class="icon">
             <i class="fas fa-3x fa-sync-alt fa-spin"></i>
         </span>
-    </h1>
+    </p>
 </div>
 {% endblock %}
 
