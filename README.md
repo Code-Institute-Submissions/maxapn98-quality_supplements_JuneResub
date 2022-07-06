@@ -229,39 +229,36 @@ This diagram shows the field structure of Message model in the contact app.
 
 **Navigation:**
 
-1. Fool proofing routes:
+Fool proofing routes:
+  - I have implemented view decorators `@login_required` and `@staff_member_required ` in order to fool proof routes that should be accessed only by authenticated or authorized users.
 
-   - I have implemented view decorators `@login_required` and `@staff_member_required ` in order to fool proof routes that should be accessed only by authenticated or authorized users.
+**Browser Support:**
+
+Deployed version of the website was tested in multiple browsers. Website was resposive on all screens in all browsers.
+
+**CRUD Operations:**
+
+Every database model was tested using CRUD actions that are provided via website interface. This testing included the following models:
+- Order
+- Order Line Item
+- Product
+- Category
+- Review
+- User Profile
+- Message
+
+*Note: Some specific models were created only for use in admin pannel. More specifically Message model is used to store client emails sent to us by application.*
 
 ## Validation
 
-### Home App
-
-**HTML**
-
-| ![Home page html code validation report](/docs/validations/html/home-page.png) |
-| :----------------------------------------------------------------------------: |
-|                        _Home page html code validation_                        |
-
-**CSS**
-
-| ![Home page css code validation report](/docs/validations/css/home-page.png) |
-| :--------------------------------------------------------------------------: |
-|                       _Home page css code validation_                        |
-
-### Products App
-
-**HTML**
-
-| ![Products page html code validation report](/docs/validations/html/products-page.png) |
-| :------------------------------------------------------------------------------------: |
-|                          _Products page html code validation_                          |
-
-**CSS**
-
-| ![Products page css code validation report](/docs/validations/css/products-page.png) |
-| :----------------------------------------------------------------------------------: |
-|                         _Products page css code validation_                          |
+- [validator.w3.org](https://validator.w3.org/)
+  - Used to validate html for each website page.
+- [jigsaw.w3.org](https://jigsaw.w3.org/css-validator/)
+  - Used to validate css for each website page.
+- [jshint.com](https://jshint.com/)
+  - Used to validate js for each page.
+- [peps.python.org](https://peps.python.org/pep-0008/)
+  - Used to validate python for each website page.
 
 ## Deployment
 
@@ -352,10 +349,6 @@ To install dependencies while in project's root dir. run the following command:
   - Used to create diagrams of database models during initial planing.
 - [coolors.co](https://coolors.co/)
   - Used to create website's color palette.
-- [validator.w3.org](https://validator.w3.org/)
-  - Used to validate html for each website page.
-- [jigsaw.w3.org](https://jigsaw.w3.org/css-validator/)
-  - Used to validate css for each website page.
 
 ## Credits
 
